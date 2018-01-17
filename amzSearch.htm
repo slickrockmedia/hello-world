@@ -27,7 +27,6 @@
 
 		//var isbn = document.getElementById("Term").value;
 		// var isbn = '0026166003';
-		// http://pcn.loc.gov/Templates/isbncnvt.js
   		var xhttp = new XMLHttpRequest();
   		xhttp.onreadystatechange = function() {
    		 if (this.readyState == 4 && this.status == 200) {
@@ -44,30 +43,12 @@
 // http://www.amazon.com/gp/offer-listing/B000MM0LIM/ref=dp_olp_used?ie=UTF8&condition=used&m=A3030B7KEKNTF7
 // http://www.amazon.com/dp/B00MU2DMX8 -->
 	}
-	function conv(isbn) {
-		
-    		var xmlHttp = new XMLHttpRequest();
-    		xmlHttp.open( "GET", 'http://pcn.loc.gov/Templates/isbncnvt.js', false ); // false for synchronous request
-    		xmlHttp.send( );
-    		
-		document.getElementById("resp").innerHTML = xmlHttp.responseText;
-
-	}
 	function try3() {
-		fetch('http://www.dontevenreply.com' )
+		fetch('http://www.icanhazip.com' )
 		.then(function(response) {
     		document.getElementById("resp").innerHTML = response.text();
 		}); 
 	}
-	function try4() {
-	fetch('https://randomuser.me/api/?results=10')
-  	.then(function(response) {
-   	 return response.text();
-  	}).then(function(text) { 
-  	
-  	document.getElementById("resp").innerHTML = text;
-	document.write(text);
- 	 });
 	
 	}
 	function hit() {
