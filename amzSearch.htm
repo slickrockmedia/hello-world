@@ -38,10 +38,7 @@
   		xhttp.open("GET", "https://www.amazon.com/gp/offer-listing/"+ isbn , true);
   		xhttp.send();
 		document.getElementById("Term").focus();
-		document.getElementById("Term").select();
-		
-// http://www.amazon.com/gp/offer-listing/B000MM0LIM/ref=dp_olp_used?ie=UTF8&condition=used&m=A3030B7KEKNTF7
-// http://www.amazon.com/dp/B00MU2DMX8 -->
+		document.getElementById("Term").select();		
 	}
 	function try3() {
 		fetch('http://www.icanhazip.com' )
@@ -54,10 +51,7 @@
 	function hit() {
 	document.getElementById("yy").innerHTML = "HIT";
 	}
-	
-
-
-	</script>
+</script>
 </head>
 <body>
 <input type="text" id="Term">
