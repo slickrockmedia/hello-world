@@ -153,7 +153,7 @@ function convertISBN(isbn)
   		var xhttp = new XMLHttpRequest();
 		xhttp.open("GET", "https://www.amazon.com/gp/offer-listing/"+ isbn , true);
 		xhttp.withCredentials = true;
-                xhttp.setRequestHeader(“Access-Control-Allow-Methods”, “GET, POST, DELETE, PUT, OPTIONS, HEAD”);
+                //xhttp.setRequestHeader(“Access-Control-Allow-Methods”, “GET, POST, DELETE, PUT, OPTIONS, HEAD”);
 		xhttp.setRequestHeader('Access-Control-Allow-Headers', '*');
     		xhttp.setRequestHeader('Content-type', 'application/javascript');
     		xhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
