@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
 <!-- Hide
 
 // **************************************************************
@@ -343,4 +343,4 @@ return isbn;
 }//hyphenate(isbn)
 
 // Unhide -->
-</script>
+
